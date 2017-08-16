@@ -3,20 +3,101 @@
     padding: 0
 }
 .container{
-    width: 1200px;
-    height: 600px;
-    background-color: darkred;
+    width: 90%;
+  
+    margin: 0 auto;
 }
-#titulo{
-    width: 600px;
-    height: 50px;
-    background-color: blue;
+h1{
+    text-align: center;
     margin: 20px;
-    font-family: sans-serif;
 }
-#foto{
-    width: 600px;
-    height: 300px;
-    background-color: yellow;
+
+#lienzo{
+    width: 100%;
+    height: 600px;
+    background-color: aqua;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
     
+}
+.foto{
+    width: 50%;
+    height: 50%;
+    border-radius: 20%;
+    position:absolute;
+}
+#foto1{
+    background-color: yellow;
+/*
+    top: 0;
+    left: 0;
+*/
+    animation-name: movarribaabajo;
+    animation-duration: 3s; 
+    background-image: url(foto1.jpg);
+}
+@keyframes movarribaabajo{ 
+    0%{
+   top: -60%;
+    left: 0;
+        
+    }
+
+    100%{
+   top: 0;
+    left: 0;
+        
+    }
+}
+#foto2{
+    
+    background-color: red;
+    top: 0;
+    right: 0;
+    animation-name: movderizq;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+#foto3{
+    background-color: blue;
+    bottom: 0;
+    left: 0;
+    animation-name: movizqder;
+    animation-duration: 3s;
+    animation-delay: 6s;
+}
+#foto4{
+  
+    background-color: pink;
+    bottom: 0;
+    right: 0;
+    animation-name: movabajoarriba;
+    animation-duration: 3s;
+    animation-delay: 9s;
+}
+
+@keyframes movderizq{
+    from{
+        
+    }
+    to{
+        
+    }
+}
+@keyframes movizqder{
+    from{
+        
+    }
+    to{
+        
+    }
+}
+@keyframes movabajoarriba{
+    from{
+        
+    }
+    to{
+        
+    }
 }
