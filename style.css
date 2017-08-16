@@ -36,17 +36,19 @@ h1{
     animation-name: movarribaabajo;
     animation-duration: 3s; 
     background-image: url(foto1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 @keyframes movarribaabajo{ 
     0%{
    top: -60%;
-    left: 0;
+    bottom: 0;
         
     }
 
     100%{
    top: 0;
-    left: 0;
+    bottom: 0;
         
     }
 }
@@ -58,6 +60,17 @@ h1{
     animation-name: movderizq;
     animation-duration: 3s;
     animation-delay: 3s;
+    background-image: url(foto2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@keyframes movderizq{
+    0%{
+       right: -60%;  
+    }
+    
+    
 }
 #foto3{
     background-color: blue;
@@ -66,6 +79,16 @@ h1{
     animation-name: movizqder;
     animation-duration: 3s;
     animation-delay: 6s;
+    background-image: url(foto3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@keyframes movizqder{
+    0%{
+        left:-60%;
+    }
+    
 }
 #foto4{
   
@@ -75,29 +98,14 @@ h1{
     animation-name: movabajoarriba;
     animation-duration: 3s;
     animation-delay: 9s;
+    background-image: url(foto4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-@keyframes movderizq{
-    from{
-        
-    }
-    to{
-        
-    }
-}
-@keyframes movizqder{
-    from{
-        
-    }
-    to{
-        
-    }
-}
 @keyframes movabajoarriba{
-    from{
-        
+    0%{
+       bottom: -60%; 
     }
-    to{
-        
-    }
+
 }
