@@ -33,31 +33,33 @@ h1{
     top: 0;
     left: 0;
 */
-    animation-name: movarribaabajo;
+    animation-name: foto1;
     animation-duration: 3s; 
     background-image: url(foto1.jpg);
     background-size: contain;
     background-repeat: no-repeat;
 }
-@keyframes movarribaabajo{ 
+@keyframes foto1{ 
     0%{
    top: -60%;
-    bottom: 0;
+    left: 0;
         
     }
 
     100%{
    top: 0;
-    bottom: 0;
+    left: 0;
         
     }
 }
 #foto2{
     
     background-color: red;
-    top: 0;
-    right: 0;
-    animation-name: movderizq;
+
+   top: 0;
+    left:150%;
+
+    animation-name: foto2;
     animation-duration: 3s;
     animation-delay: 3s;
     background-image: url(foto2.png);
@@ -65,13 +67,16 @@ h1{
     background-repeat: no-repeat;
 }
 
-@keyframes movderizq{
+@keyframes foto2{
     0%{
-       right: -60%;  
+     top: 0;
+    left:150%;
+        
     }
-     100%{
+
+    100%{
    top: 0;
-    bottom: 0;
+    left: 50%;
         
     }
     
@@ -79,9 +84,9 @@ h1{
 }
 #foto3{
     background-color: blue;
-    bottom: 0;
-    left: 0;
-    animation-name: movizqder;
+     top: 50%;
+    left:-50%;
+    animation-name: foto3;
     animation-duration: 3s;
     animation-delay: 6s;
     background-image: url(foto3.jpg);
@@ -89,18 +94,25 @@ h1{
     background-repeat: no-repeat;
 }
 
-@keyframes movizqder{
+@keyframes foto3{
     0%{
-        left:-60%;
+     top: 50%;
+    left:-50%;
+        
     }
-    
+
+    100%{
+   top: 50%;
+    left: 0%;
+        
+    }
 }
 #foto4{
   
     background-color: pink;
-    bottom: 0;
-    right: 0;
-    animation-name: movabajoarriba;
+     top: 150%;
+    left:50%;
+    animation-name: foto4;
     animation-duration: 3s;
     animation-delay: 9s;
     background-image: url(foto4.jpg);
@@ -108,9 +120,17 @@ h1{
     background-repeat: no-repeat;
 }
 
-@keyframes movabajoarriba{
-    0%{
-       bottom: -60%; 
+@keyframes foto4{
+   0%{
+     top: 150%;
+    left:50%;
+        
+    }
+
+    100%{
+   top: 50%;
+    left: 50%;
+        
     }
 
 }
